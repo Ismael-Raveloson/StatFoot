@@ -21,6 +21,7 @@ function App() {
         </header>
       </div>
       <h1>Hello World</h1>
+      <h2>Coucou Fanilo</h2>
     </>
   );
 }
