@@ -1,5 +1,7 @@
+
 import Header from "../components/Header";
 import TableauAttaque from "../components/TableauAttaque";
+
 function Attaque() {
     const attaque = ["Equipe","Ligue","Tir/Match","Tir Cadre / Match","Dribble / Match","Faute Subie / Match","Note"];
     const attaqueStat = [
