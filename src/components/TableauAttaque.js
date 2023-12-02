@@ -30,7 +30,7 @@ function TableauAttaque(props) {
               {/*miboucle  donnée ana tableau */}
               {data.map((stat,index) =>(
                 <>
-                  <tr scope="row">
+                  <tr class="row">
                     <td class="result">{stat.equipe}</td>
                     <td class="result">{stat.ligue}</td>
                     <td class="result">{stat.tirMatch}</td>

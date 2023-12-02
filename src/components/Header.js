@@ -1,5 +1,4 @@
 import '../assets/css/header.css';
-import { Navigate } from 'react-router-dom';
 function Tableau() {
     return (
       <div class="header">
