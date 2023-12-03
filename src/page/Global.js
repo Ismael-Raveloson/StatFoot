@@ -48,17 +48,45 @@ function Global() {
   
       fetchData();
     }, []); 
-      
 
+    const [data_domicile, setDataDomicile] = useState([]);
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await getDataFromUrl("https://statfootmada.azurewebsites.net/api/Statistique/selectStatGeneraDomicile");
+          setDataDomicile(response);
+        } catch (error) {
+          console.error("Erreur lors de la récupération des données :", error.message);
+        }
+      };
+  
+      fetchData();
+    }, []); 
+    
+    const [data_exterieur, setDataExterieur] = useState([]);
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await getDataFromUrl("https://statfootmada.azurewebsites.net/api/Statistique/selectStatGeneraExterieur");
+          setDataExterieur(response);
+        } catch (error) {
+          console.error("Erreur lors de la récupération des données :", error.message);
+        }
+      };
+  
+      fetchData();
+    }, []); 
 
+    
+    
 
     return (
       <>
         <Header></Header>
 
         <Tableau entete={global} data={dataGeneral} title="Global"></Tableau>
-        <Tableau entete={global} data={globalstat} title="Domicile"></Tableau>
-        <Tableau entete={global} data={globalstat} title="Exterieur"></Tableau>
+        <Tableau entete={global} data={data_domicile} title="Domicile"></Tableau>
+        <Tableau entete={global} data={data_exterieur} title="Exterieur"></Tableau>
       </>
     );
   }

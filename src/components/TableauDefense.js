@@ -37,7 +37,7 @@ function TableauDefense(props) {
                     <td className="result">{stat.tacleMatch}</td>
                     <td className="result">{stat.interceptionMatch}</td>
                     <td className="result">{stat.fauteMatch}</td>
-                    <td className="result" >{stat.horsJeuxMatch}</td>
+                    <td className="result" >{stat.horsJeuMatch}</td>
                     <td className="result" >{stat.note}</td>
                   </tr>
                   <tr className="spacer"><td colSpan="100" key={index}></td></tr>

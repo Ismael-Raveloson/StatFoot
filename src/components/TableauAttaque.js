@@ -34,9 +34,9 @@ function TableauAttaque(props) {
                     <td className ="result">{stat.equipe}</td>
                     <td className ="result">{stat.ligue}</td>
                     <td className ="result">{stat.tirMatch}</td>
-                    <td className ="result">{stat.tirCadreMatch}</td>
+                    <td className ="result">{stat.tireCadreMatch}</td>
                     <td className ="result">{stat.dribbleMatch}</td>
-                    <td className ="result">{stat.fauteSubieMatch}</td>
+                    <td className ="result">{stat.fauteMatch}</td>
                     <td className ="result" >{stat.note}</td>
                   </tr>
                   <tr className ="spacer"><td colSpan="100" key={index}></td></tr>
