@@ -7,20 +7,20 @@ function TableauAttaque(props) {
     const {entete , data , title} = props;
 
     return (
-    <div class="tableau">
-      <div class="container">
-        <h2 class="mb-5">{title}</h2>
+    <div className ="tableau">
+      <div className ="container">
+        <h2 className ="mb-5">{title}</h2>
         
 
-        <div class="table-responsive custom-table-responsive">
+        <div className ="table-responsive custom-table-responsive">
 
-          <table class="table custom-table">
+          <table className ="table custom-table">
             <thead>
 
               <tr> 
               {/*miboucle entete ana tableau */}
                 {entete.map((titre,index) =>(
-                  <th scope="col" class="entete" key={index}>{titre}</th>
+                  <th scope="col" className ="entete" key={index}>{titre}</th>
                 ))}
               </tr>
 
@@ -30,16 +30,16 @@ function TableauAttaque(props) {
               {/*miboucle  donnée ana tableau */}
               {data.map((stat,index) =>(
                 <>
-                  <tr class="row">
-                    <td class="result">{stat.equipe}</td>
-                    <td class="result">{stat.ligue}</td>
-                    <td class="result">{stat.tirMatch}</td>
-                    <td class="result">{stat.tirCadreMatch}</td>
-                    <td class="result">{stat.dribbleMatch}</td>
-                    <td class="result">{stat.fauteSubieMatch}</td>
-                    <td class="result" >{stat.note}</td>
+                  <tr className ="row" key={index}>
+                    <td className ="result">{stat.equipe}</td>
+                    <td className ="result">{stat.ligue}</td>
+                    <td className ="result">{stat.tirMatch}</td>
+                    <td className ="result">{stat.tirCadreMatch}</td>
+                    <td className ="result">{stat.dribbleMatch}</td>
+                    <td className ="result">{stat.fauteSubieMatch}</td>
+                    <td className ="result" >{stat.note}</td>
                   </tr>
-                  <tr class="spacer"><td colspan="100"></td></tr>
+                  <tr className ="spacer"><td colSpan="100" key={index}></td></tr>
                 </>
               ))}
                                         
